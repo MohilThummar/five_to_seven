@@ -1,5 +1,6 @@
-import 'package:five_to_seven/view_widget/figma_seven_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'view_widget/text_filed_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,24 +16,46 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
-        // fontFamily: "Alkatra",
       ),
-      home: const FigmaSevenScreen(),
+      home: const TextFiledScreen(),
     );
   }
 }
 
-/// ListTile
-/// Common Widget
-/// GitHub
-/// Listview Builder
-/// Listview Separated
-/// GridView Builer (Sliver fix count, Sliver max extent)
-/// GridView Count
-/// GridView Extent
-/// BottomNavigationBar
 /// TextField
 /// Form
-/// List Pass in widget
-/// Map Pass in widget
+
+/// Plugins
+
+/// MediaQuery
+/// Project Structure
+
+/// Buttons (All Types)
+/// --> GestureDetector Button
+/// --> Inkwell
+/// --> BackButton
+/// --> Elevated Button
+/// --> OutLineButton
+/// --> FlotingActionButton
+/// --> TextButton
+/// --> IconButton
+/// --> SwitchButton
+/// --> CheackBoxButton
+/// --> DropeDownButton
+/// --> RadioButton
+/// --> RadioListTileButton
+/// --> PopupMenuButton
+/// --> BottomNavigationBar
+
+/// Slider
+/// RangeSlider
+/// Datepicker
+/// TimePicker
+/// CupertinoPicker
+/// SimpleDialog
+/// AlertDialog
+/// BottomSheet
+/// SnackBar
+/// Tostmessage
+
 /// Map view
