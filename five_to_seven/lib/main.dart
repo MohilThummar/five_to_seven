@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// TextField
 /// Form
 
 /// Plugins
+/// RangeSlider
 
 /// MediaQuery
 /// Project Structure
@@ -48,7 +48,6 @@ class MyApp extends StatelessWidget {
 /// --> BottomNavigationBar
 
 /// Slider
-/// RangeSlider
 /// Datepicker
 /// TimePicker
 /// CupertinoPicker

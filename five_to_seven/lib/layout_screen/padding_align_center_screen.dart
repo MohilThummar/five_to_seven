@@ -19,13 +19,13 @@ class _PaddingAlignCenterScreenState extends State<PaddingAlignCenterScreen> {
         child: Column(
           children: [
             Container(height: 100, width: 100, color: Colors.red),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(height: 100, width: 100, color: Colors.yellow),
             Container(height: 100, width: 100, color: Colors.blue),
             Row(
               children: [
                 Container(height: 100, width: 100, color: Colors.green),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 Container(height: 100, width: 100, color: Colors.black),
                 Container(height: 100, width: 100, color: Colors.deepPurple),
               ],
@@ -34,7 +34,7 @@ class _PaddingAlignCenterScreenState extends State<PaddingAlignCenterScreen> {
               height: 150,
               width: 150,
               color: Colors.teal,
-              child: Center(
+              child: const Center(
                 child: Icon(
                   Icons.add,
                 ),

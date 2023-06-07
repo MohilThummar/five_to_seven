@@ -14,10 +14,10 @@ class _DrawerScreenState extends State<DrawerScreen> {
       appBar: AppBar(
         title: const Text("Drawer Screen"),
       ),
-      drawer: Drawer(),
-      endDrawer: Drawer(),
+      drawer: const Drawer(),
+      endDrawer: const Drawer(),
       drawerEdgeDragWidth: 100,
-      body: Column(
+      body: const Column(
         children: [],
       ),
     );

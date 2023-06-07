@@ -21,16 +21,16 @@ class _ExpandedAndFlexibleScreenState extends State<ExpandedAndFlexibleScreen> {
             Expanded(
               child: Container(
                 color: Colors.green,
-                child: Text("123465789 mohil thummat  db c djkcfbsd sdjsdj vsdjhb 123465789 mohil thummat  db c djkcfbsd sdjsdj vsdjhb"),
+                child: const Text("123465789 mohil thummat  db c djkcfbsd sdjsdj vsdjhb 123465789 mohil thummat  db c djkcfbsd sdjsdj vsdjhb"),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Flexible(
               fit: FlexFit.loose,
               flex: 1,
               child: Container(
                 color: Colors.green,
-                child: Text("1234658465"),
+                child: const Text("1234658465"),
               ),
             ),
           ],

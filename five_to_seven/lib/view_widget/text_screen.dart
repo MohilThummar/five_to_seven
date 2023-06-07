@@ -10,10 +10,10 @@ class TextScreen extends StatefulWidget {
 class _TextScreenState extends State<TextScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: Column(
-          children: const [
+          children: [
             Text(
               "Hello everyone",
               textAlign: TextAlign.center,

@@ -18,10 +18,10 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
           padding: const EdgeInsets.all(15),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Icon(
+                  Icon(
                     Icons.notifications_none,
                     size: 30,
                     color: Color(0xFFBDBDBD),
@@ -29,7 +29,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                   Column(
                     children: [
                       Row(
-                        children: const [
+                        children: [
                           Icon(
                             Icons.location_on_outlined,
                             size: 20,
@@ -55,7 +55,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                           ),
                         ],
                       ),
-                      const Text(
+                      Text(
                         "9, suramya duplex, nr. nigam bus stand.....",
                         style: TextStyle(
                           fontSize: 13,
@@ -64,7 +64,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                       ),
                     ],
                   ),
-                  const Icon(
+                  Icon(
                     Icons.favorite_border,
                     size: 30,
                     color: Color(0xFFBDBDBD),
@@ -80,8 +80,8 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                       height: 52,
                       color: const Color(0xFF161616),
                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Row(
-                        children: const [
+                      child: const Row(
+                        children: [
                           Icon(
                             Icons.search_rounded,
                             color: Color(0xFFBDBDBD),
@@ -128,15 +128,15 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.end,
-                            children: const [
+                            children: [
                               Text(
                                 "Get your first order at",
                                 style: TextStyle(
@@ -159,7 +159,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               mainAxisAlignment: MainAxisAlignment.end,
-                              children: const [
+                              children: [
                                 Text(
                                   "Dive in now.",
                                   style: TextStyle(
@@ -186,9 +186,9 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                 ),
               ),
               const SizedBox(height: 15),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "What’s your mood today?",
                     style: TextStyle(
@@ -204,17 +204,17 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Color(0xffff7a538),
+                      color: Color(0x0ff7a538),
                     ),
                   ),
                 ],
               ),
               const SizedBox(height: 15),
-              SizedBox(
+              const SizedBox(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: const [
+                    children: [
                       CategoryTile(
                         image: "assets/images/images_seven/samosa.png",
                         name: "Snacks",
@@ -264,9 +264,9 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                 ),
               ),
               const SizedBox(height: 15),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "Popular moods you can get",
                     style: TextStyle(
@@ -280,7 +280,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Color(0xffff7a538),
+                      color: Color(0x0ff7a538),
                     ),
                   ),
                 ],
@@ -339,9 +339,9 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                 ),
               ),
               const SizedBox(height: 15),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
                     "Nearby moods around you",
                     style: TextStyle(
@@ -357,7 +357,7 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Color(0xffff7a538),
+                      color: Color(0x0ff7a538),
                     ),
                   ),
                 ],
@@ -399,9 +399,9 @@ class _FigmaSevenScreenState extends State<FigmaSevenScreen> {
                               )
                             ],
                           ),
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
+                            children: [
                               Text(
                                 "Das Kitchen",
                                 style: TextStyle(

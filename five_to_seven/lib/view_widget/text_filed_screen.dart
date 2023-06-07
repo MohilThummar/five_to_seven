@@ -1,14 +1,18 @@
+import 'package:five_to_seven/common/app_text_filed.dart';
 import 'package:flutter/material.dart';
 
 class TextFiledScreen extends StatefulWidget {
   const TextFiledScreen({Key? key}) : super(key: key);
 
   @override
-  State<TextFiledScreen> createState() => _TextFIledScreenState();
+  State<TextFiledScreen> createState() => _TextFiledScreenState();
 }
 
-class _TextFIledScreenState extends State<TextFiledScreen> {
-  TextEditingController textController = TextEditingController();
+class _TextFiledScreenState extends State<TextFiledScreen> {
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,58 +24,36 @@ class _TextFIledScreenState extends State<TextFiledScreen> {
         padding: const EdgeInsets.all(15),
         child: Column(
           children: [
-            TextField(
-              controller: textController,
-              style: const TextStyle(
-                fontSize: 20,
-                color: Colors.red,
-              ),
-              textInputAction: TextInputAction.go,
-              // textAlign: TextAlign.center,
-              enabled: false,
-              autocorrect: false,
-              autofocus: true,
-              cursorColor: Colors.blue,
-              inputFormatters: const [
-                // FilteringTextInputFormatter.allow(RegExp('[a-zA-Z]')),
-              ],
-              // textDirection: TextDirection.rtl,
-              textCapitalization: TextCapitalization.words,
-              keyboardType: TextInputType.text,
-              onTap: () {
-                debugPrint("onTap --->>");
-              },
-              // onSubmitted: (value) {
-              //   debugPrint("onSubmitted --->> $value");
-              // },
-              onChanged: (value) {
-                debugPrint("onChanged --->> $value");
-              },
-              // onEditingComplete: () {
-              //   debugPrint("onEditingComplete --->>");
-              // },
-              onTapOutside: (event) {
-                debugPrint("onTapOutside --->> $event");
-              },
-              // maxLength: 20,
-              minLines: 1,
-              maxLines: 1,
-              obscureText: true,
-              obscuringCharacter: "1",
-
-              decoration: InputDecoration(
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                // enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                // focusedBorder: ,
-                // disabledBorder: ,
-                // errorBorder: ,
-                // focusedErrorBorder: ,
-                //
-              ),
+            AppTextFiled(
+              controller: nameController,
+              prefixIcon: Icons.person_2_outlined,
+              hintText: "Enter Name",
             ),
             const SizedBox(height: 20),
-            Text(
-              textController.text,
+            AppTextFiled(
+              controller: emailController,
+              prefixIcon: Icons.email_outlined,
+              hintText: "Enter Email",
+              textInputType: TextInputType.emailAddress,
+            ),
+            const SizedBox(height: 20),
+            AppTextFiled(
+              controller: phoneController,
+              prefixIcon: Icons.phone_android_outlined,
+              hintText: "Enter Phone",
+              textInputType: TextInputType.phone,
+            ),
+            const SizedBox(height: 20),
+            AppTextFiled(
+              controller: passwordController,
+              prefixIcon: Icons.password_outlined,
+              hintText: "Enter Password",
+              textInputAction: TextInputAction.done,
+            ),
+            const SizedBox(height: 40),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("Sign Up"),
             ),
           ],
         ),

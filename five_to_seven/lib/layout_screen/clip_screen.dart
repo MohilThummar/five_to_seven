@@ -32,7 +32,7 @@ class _ClipScreenState extends State<ClipScreen> {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ClipRect(
               clipBehavior: Clip.antiAlias,
               child: SizedBox(
@@ -44,7 +44,7 @@ class _ClipScreenState extends State<ClipScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ClipRRect(
               clipBehavior: Clip.antiAlias,
               borderRadius: BorderRadius.circular(20),
@@ -57,7 +57,7 @@ class _ClipScreenState extends State<ClipScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ClipOval(
               clipBehavior: Clip.antiAlias,
               child: Image.asset(

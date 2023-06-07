@@ -19,9 +19,9 @@ class _AppBarScreenState extends State<AppBarScreen> {
         shadowColor: Colors.red,
         leading: Container(
           color: Colors.yellow,
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
-        actions: [
+        actions: const [
           // actionsIconTheme: ,
           Icon(Icons.notifications),
           SizedBox(width: 15),
@@ -30,7 +30,7 @@ class _AppBarScreenState extends State<AppBarScreen> {
         ],
         leadingWidth: 150,
       ),
-      body: Column(),
+      body: const Column(),
     );
   }
 }

@@ -21,7 +21,7 @@ class AppButton extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            number.toString() ?? "",
+            number.toString(),
             style: const TextStyle(
               fontSize: 20,
               color: Colors.white,
