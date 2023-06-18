@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
 /// SwitchButton
 /// CheckBoxButton
 /// --> DropDownButton
-/// --> RadioButton
-/// --> RadioListTileButton
+/// RadioButton
+/// RadioListTileButton
 /// --> PopupMenuButton
 /// --> BottomNavigationBar
 
