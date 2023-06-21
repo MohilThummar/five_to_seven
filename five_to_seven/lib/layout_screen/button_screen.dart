@@ -14,6 +14,9 @@ class _ButtonScreenState extends State<ButtonScreen> {
 
   int radioButton = 0;
 
+  int dropDownValue = 2;
+  int popUpMenuValue = 0;
+
   int radioListButton = 0;
   List<Map<String, dynamic>> colorTextList = [
     {"index": 1, "text": "Red Color"},
@@ -102,7 +105,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
               scale: 2,
               child: Checkbox(
                 value: checkBoxValue,
-                shape: CircleBorder(),
+                shape: const CircleBorder(),
                 onChanged: (value) {
                   debugPrint("Value --> $value");
                   checkBoxValue = value!;
@@ -139,10 +142,10 @@ class _ButtonScreenState extends State<ButtonScreen> {
             const SizedBox(height: 5),
             ListTile(
               onTap: () {},
-              title: Text("Jone"),
-              subtitle: Text("Hello How are yoi"),
-              trailing: Text("12:25"),
-              leading: CircleAvatar(
+              title: const Text("Jone"),
+              subtitle: const Text("Hello How are yoi"),
+              trailing: const Text("12:25"),
+              leading: const CircleAvatar(
                 backgroundColor: Colors.red,
               ),
             ),
@@ -158,10 +161,63 @@ class _ButtonScreenState extends State<ButtonScreen> {
                         setState(() {});
                       },
                       title: Text(data['text']),
-                      subtitle: Text("Hello How are yoi"),
+                      subtitle: const Text("Hello How are yoi"),
                     ),
                   )
                   .toList(),
+            ),
+            const SizedBox(height: 5),
+            DropdownButton(
+              onChanged: (value) {
+                debugPrint("Value ---->> $value");
+                dropDownValue = value!;
+                setState(() {});
+              },
+              isExpanded: true,
+              value: dropDownValue,
+              items: colorTextList
+                  .map(
+                    (data) => DropdownMenuItem(
+                      onTap: () {},
+                      value: int.parse(data["index"].toString()),
+                      child: Text(data["text"]),
+                    ),
+                  )
+                  .toList(),
+            ),
+            const SizedBox(height: 5),
+            PopupMenuButton(
+              tooltip: "Button",
+              onSelected: (value) {
+                debugPrint("Value ---->> $value");
+                popUpMenuValue = value;
+              },
+              itemBuilder: (context) => colorTextList
+                  .map(
+                    (data) => PopupMenuItem(
+                      onTap: () {},
+                      value: int.parse(data["index"].toString()),
+                      child: Text(data["text"]),
+                    ),
+                  )
+                  .toList(),
+              /* itemBuilder: (context) => [
+                PopupMenuItem(
+                  onTap: () {},
+                  value: 1,
+                  child: const Text("Edit"),
+                ),
+                PopupMenuItem(
+                  onTap: () {},
+                  value: 2,
+                  child: const Text("Add"),
+                ),
+                PopupMenuItem(
+                  onTap: () {},
+                  value: 3,
+                  child: const Text("Delete"),
+                ),
+              ],*/
             ),
             const SizedBox(height: 150),
           ],
