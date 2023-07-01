@@ -1,6 +1,5 @@
+import 'package:five_to_seven/bottom_view/bottom_bar_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'layout_screen/button_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const ButtonScreen(),
+      home: const BottomBarScreen(),
     );
   }
 }
@@ -40,7 +39,9 @@ class MyApp extends StatelessWidget {
 // RadioListTileButton
 // PopupMenuButton
 
-/// --> BottomNavigationBar
+// BottomNavigationBar
+
+// Navigation
 
 /// Form
 
@@ -51,13 +52,13 @@ class MyApp extends StatelessWidget {
 /// Project Structure
 
 /// Slider
-/// Datepicker
+/// Date picker
 /// TimePicker
 /// CupertinoPicker
 /// SimpleDialog
 /// AlertDialog
 /// BottomSheet
 /// SnackBar
-/// Tostmessage
+/// Toast message
 
 /// Map view
