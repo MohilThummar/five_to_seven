@@ -6,6 +6,7 @@ class AppTextFiled extends StatelessWidget {
   final IconData? prefixIcon;
   final TextInputAction? textInputAction;
   final TextInputType? textInputType;
+  final String? Function(String?)? validator;
 
   const AppTextFiled({
     super.key,
@@ -14,14 +15,16 @@ class AppTextFiled extends StatelessWidget {
     this.prefixIcon,
     this.textInputAction,
     this.textInputType,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       controller: controller,
       textInputAction: textInputAction ?? TextInputAction.next,
       keyboardType: textInputType ?? TextInputType.text,
+      validator: validator,
       decoration: InputDecoration(
         hintText: hintText ?? "",
         prefixIcon: Icon(prefixIcon!),

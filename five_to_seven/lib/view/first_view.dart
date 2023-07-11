@@ -1,4 +1,4 @@
-import 'package:five_to_seven/view/second_view.dart';
+import 'package:five_to_seven/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 
 class FirstView extends StatefulWidget {
@@ -21,12 +21,18 @@ class _FirstViewState extends State<FirstView> {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const SecondView(),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => const SecondView(),
+                //   ),
+                // );
+
+                Navigator.pushNamed(context, RoutesName.secondView);
+                Navigator.pushReplacementNamed(context, "/SecondView");
+                Navigator.pushNamedAndRemoveUntil(context, "/SecondView",(route) => false,);
+
+                Navigator.pop(context);
               },
               child: const Text("Go To Next Screen"),
             ),

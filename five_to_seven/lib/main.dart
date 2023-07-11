@@ -1,5 +1,6 @@
-import 'package:five_to_seven/bottom_view/bottom_bar_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'view_widget/text_form_filed_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +17,59 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const BottomBarScreen(),
+      // initialRoute: RoutesName.initialRoute,
+      // routes: AppRoutes().appRoutes,
+      home: const TextFormFiledScreen(),
     );
   }
 }
+
+// Stateless Widget
+// Stateful Widget
+// Material App
+// Cupertino App
+
+// Scaffold
+// Container
+// SafeArea
+// Column
+// Row
+// Text (Font Family)
+// Icon
+// Image (Assets, Network)
+// AppBar
+// Drawer
+// EndDrawer
+// Padding
+// Align
+// Center
+// ClipRect
+// ClipRRect
+// ClipOvel
+// SizedBox
+// Expanded
+// Flexible
+// Stack
+// Positioned
+// Divider
+// Spacer
+// RichText
+// TabBar
+
+// SingleChildScrollView
+// Listview
+// ListTile
+
+// Common Widget
+// GitHub
+
+// Listview Builder
+// Listview Separated
+// GridView Builer (Sliver fix count, Sliver max extent)
+// GridView Count
+// GridView Extent
+
+// Map view
 
 // TextField
 
@@ -43,10 +93,9 @@ class MyApp extends StatelessWidget {
 
 // Navigation
 
-/// Form
+// Form
 
 /// Plugins
-/// RangeSlider
 
 /// MediaQuery
 /// Project Structure
@@ -60,5 +109,3 @@ class MyApp extends StatelessWidget {
 /// BottomSheet
 /// SnackBar
 /// Toast message
-
-/// Map view
