@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'view_widget/text_form_filed_screen.dart';
+import 'routes/app_routes.dart';
+import 'routes/routes_name.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      // initialRoute: RoutesName.initialRoute,
-      // routes: AppRoutes().appRoutes,
-      home: const TextFormFiledScreen(),
+      initialRoute: RoutesName.initialRoute,
+      routes: AppRoutes().appRoutes,
+      // home: const TextFormFiledScreen(),
     );
   }
 }
