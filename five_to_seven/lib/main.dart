@@ -1,7 +1,5 @@
+import 'package:five_to_seven/view_widget/text_filed_screen.dart';
 import 'package:flutter/material.dart';
-
-import 'routes/app_routes.dart';
-import 'routes/routes_name.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.green,
+        useMaterial3: true,
       ),
-      initialRoute: RoutesName.initialRoute,
-      routes: AppRoutes().appRoutes,
-      // home: const TextFormFiledScreen(),
+      // initialRoute: RoutesName.initialRoute,
+      // routes: AppRoutes().appRoutes,
+      home: const TextFiledScreen(),
     );
   }
 }
@@ -96,15 +95,15 @@ class MyApp extends StatelessWidget {
 
 // Form
 
-/// Plugins
+// Plugins
 
-/// MediaQuery
-/// Project Structure
+// MediaQuery
+// Project Structure
 
-/// Slider
-/// Date picker
-/// TimePicker
-/// CupertinoPicker
+// Slider
+// Date picker
+// TimePicker
+// CupertinoPicker
 /// SimpleDialog
 /// AlertDialog
 /// BottomSheet
