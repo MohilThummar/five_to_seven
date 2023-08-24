@@ -31,7 +31,7 @@ class _DialogScreenState extends State<DialogScreen> {
               },
               child: const Text("Simple Dialog"),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             ElevatedButton(
               onPressed: () {
                 showDialog(
@@ -40,6 +40,84 @@ class _DialogScreenState extends State<DialogScreen> {
                 );
               },
               child: const Text("Alert Dialog"),
+            ),
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true,
+                  // useSafeArea: ,
+                  // barrierColor: ,
+                  // elevation: ,
+                  // backgroundColor: ,
+                  // clipBehavior: ,
+                  // enableDrag: ,
+                  // isDismissible: ,
+                  showDragHandle: true,
+                  builder: (context) => Container(
+                    color: Colors.red,
+                    width: double.infinity,
+                    child: ListView(
+                      // mainAxisSize: MainAxisSize.min,
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+
+                      children: [
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.yellow,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.green,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.blue,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.yellow,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.green,
+                        ),
+                        SizedBox(height: 15),
+                        Container(
+                          height: 50,
+                          width: 180,
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        SizedBox(height: 15),
+                      ],
+                    ),
+                  ),
+                );
+              },
+              child: const Text("Open Bottom Sheet"),
             ),
           ],
         ),
