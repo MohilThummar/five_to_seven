@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
 // Toast message
 
 /// 22-08-2023
-/// Pass Data using navigation
+// Pass Data using navigation
 /// Model class (To - Do App )
 
 /// 26-08-2023

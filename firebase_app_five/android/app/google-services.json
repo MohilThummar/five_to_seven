@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322396051102",
+    "project_id": "five-to-seven",
+    "storage_bucket": "five-to-seven.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322396051102:android:07cf913dd45be988148d8f",
+        "android_client_info": {
+          "package_name": "com.app.firebase_app_five"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyoWvKU4V3iHSuh74nAIhyI3xmDIi66wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
