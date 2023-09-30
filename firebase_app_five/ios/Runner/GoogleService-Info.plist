@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>322396051102-m3skvtul7de32nrekn1j2gc2kb2sptaa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.322396051102-m3skvtul7de32nrekn1j2gc2kb2sptaa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAL3YGNL9-3_wZPU8093uAc0EuiwiSMXak</string>
+	<key>GCM_SENDER_ID</key>
+	<string>322396051102</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.firebaseAppFive</string>
+	<key>PROJECT_ID</key>
+	<string>five-to-seven</string>
+	<key>STORAGE_BUCKET</key>
+	<string>five-to-seven.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:322396051102:ios:5a191a2588382570148d8f</string>
+</dict>
+</plist>

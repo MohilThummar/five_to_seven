@@ -1,5 +1,6 @@
-import 'package:firebase_app_five/view/auth_view/login_view.dart';
 import 'package:flutter/material.dart';
+
+import 'storage/storage_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -13,11 +14,12 @@ class _SplashViewState extends State<SplashView> {
     Future.delayed(
       const Duration(seconds: 3),
       () {
-        Navigator.push(
+        Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
-            builder: (context) => const LoginView(),
+            builder: (context) => const StorageView(),
           ),
+          (route) => false,
         );
       },
     );

@@ -3,6 +3,7 @@ import 'package:firebase_app_five/view/auth_view/signup_view.dart';
 import 'package:firebase_app_five/view/home/home_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -68,6 +69,13 @@ class _LoginViewState extends State<LoginView> {
                   }
                 },
                 child: const Text("Login"),
+              ),
+              const SizedBox(height: 15),
+              ElevatedButton(
+                onPressed: () async {
+                  signInWithGoogle();
+                },
+                child: const Text("Google Login"),
               ),
               const SizedBox(height: 30),
               TextButton(
@@ -143,6 +151,29 @@ class _LoginViewState extends State<LoginView> {
       }
     } catch (e) {
       debugPrint("$e ---------------------------------->>");
+    }
+  }
+
+  Future<void> signInWithGoogle() async {
+    try {
+      // Trigger the authentication flow
+      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+      debugPrint("Google User data -->> ${googleUser.toString()}");
+
+      // Obtain the auth details from the request
+      final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+
+      // Create a new credential
+      final OAuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth?.accessToken,
+        idToken: googleAuth?.idToken,
+      );
+
+      // Once signed in, return the UserCredential
+      await FirebaseAuth.instance.signInWithCredential(credential);
+    } catch (error) {
+      debugPrint("Error -----> $error");
     }
   }
 }
