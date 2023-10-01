@@ -108,36 +108,27 @@ class MyApp extends StatelessWidget {
 // SimpleDialog
 // AlertDialog
 
-/// 21-08-2023 (Dart and flutter basic self revision start)
 // BottomSheet
 // SnackBar
 // Toast message
 
-/// 22-08-2023
 // Pass Data using navigation
-/// Model class (To - Do App )
+// Model class (To - Do App )
 
-/// 26-08-2023
-/// Shared preferences (To - Do App)
+// Shared preferences (To - Do App)
 
-/// 01-09-2023
-/// Firebase
+// Firebase
 
-/// 04-09-2023
-/// Firebase Auth (Email and password, Google) (Github, PhoneNumber with otp)
+// Firebase Auth (Email and password, Google) (Github, PhoneNumber with otp)
 
-/// 05-09-2023
-/// Firebase Storage ()
+// Firebase Storage ()
 
-/// 09-09-2023 (optional)
-/// Firebase Data Management ()
+// Firebase Data Management ()
 
-/// 13-09-2023
-/// Api
-/// Api method call (Get, Post, Put, Delete)
-/// Api Data Management
+// Api
+// Api method call (Get, Post, Put, Delete)
+// Api Data Management
 
-/// 19-09-2023
 /// GetX
 /// GetX structure
 /// GetX UI and layout
